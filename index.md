@@ -1,12 +1,26 @@
-hello
-*italic*
-**bold**
-# heading 1
-## heading 2
+# i think this page is supposed to help navigate to other pages so...
 
-aaaaaaaaaa
-adding more text
 
+## Week 0
 [Lab Report 1](lab-report-1-week-0.html)
 
+## Week 1
 [Lab Report 1: Remote Access and Filesystem](lab-report-week-1.html)
+
+## Week 2
+
+## Week 3
+
+## Week 4
+
+## Week 5
+
+## Week 6
+
+## Week 7
+
+## Week 8
+
+## Week 9
+
+## Week 10
