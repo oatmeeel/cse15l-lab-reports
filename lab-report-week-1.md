@@ -4,7 +4,7 @@ Go to the [Visual Studio Code](https://code.visualstudio.com/) website to instal
 
 Once installed, you should be able to open the application. (it should look something like this but it won't have any files)
 
-![Image](installingvscode.png)
+![Image](./week%201/installingvscode.png)
 
 # 2. Remotely Connecting
 Go to [this website](https://sdacs.ucsd.edu/~icc/index.php) to find your CSE 15L account name. The first nine characters should be cs15lfa22 and the last two letters are unique to each user.
@@ -15,12 +15,12 @@ Once the previous two steps have been completed, you should be able to remotely 
 
 Once you have remotely connected, the terminal should display something similar to the image below.
 
-![Image](remotelyconnecting.png)
+![Image](./week%201/remotelyconnecting.png)
 
 # 3. Trying Some Commands
 Once remotely connected, you can run some basic commands from the terminal, for example "ls", "cd", etc. (you can look up other commands)
 
-![Image](tryingsomecommands.png)
+![Image](./week%201/tryingsomecommands.png)
 
 # 4. Moving Files with SCP
 One easy way to tell if you have copied a file to the remote system is a java file that runs some commands that give information about the system it is located on. Create a file named WhereAmI.java on your client and paste this code into it:
@@ -35,18 +35,18 @@ One easy way to tell if you have copied a file to the remote system is a java fi
     }
 Afterwards, locally run "javac WhereAmI.java" and "java WhereAmI". You should get an output that shows you your operating system, your username, and the location of WhereAmI.java on your system.
 
-![Image](movingfileswithscp.png)
+![Image](./week%201/movingfileswithscp.png)
 
 Now, log onto the remote system. Run the same two commands in the previous step and it should output the information of the remote system like this.
 
-![Image](movingfileswithscp2.png)
+![Image](./week%201/movingfileswithscp2.png)
 
 # 5. Setting an SSH Key
 Next, you can run the command "ssh-keygen" to generate a public/private rsa key pair. One copy of this key will be saved locally and one will be saved on the remote system. This key serves as a fingerprint so that you don't have to re enter your password everytime you want to log onto the remote server.
 
 See screenshot for specifics on what commands to run.
 
-![Image](settingansshkey.png)
+![Image](./week%201/settingansshkey.png)
 
 # 6. Optimising Remote Running
 Lastly, you can now run commands on the remote system directly from your local system. in order to do this, run your commands in this format:
@@ -54,4 +54,4 @@ Lastly, you can now run commands on the remote system directly from your local s
     $ ssh cs15lfa22@ieng6.ucsd.edu "[put your command here, or multiple commands separated by commas]"
 
 
-![Image](optimisingremoterunning.png)
+![Image](./week%201/optimisingremoterunning.png)
