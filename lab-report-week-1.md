@@ -27,21 +27,27 @@ Once you have remotely connected, the terminal should display something similar 
 Once remotely connected, you can run some basic commands from the terminal. A list of possible commands can be found online, but here are some that can get you started:
 
     cd <directory name>
+
 cd can be used to change the directory to a directory of your choice.
 
     ls
+
 ls lists the contents of the current directory.
 
     pwd
+
 pwd can be used to display the location of the current working directory.
 
     mkdir <directory name>
+
 mkdir can be used to create a new directory at a specific location.
 
     cp <filename> <new filename>
+
 cp can be used to copy a file.
 
     cat <filename>
+
 cat, short for concatenate, can be used to print the contents of a given file.
 
 Plus there are many more commands not listed here.
@@ -59,6 +65,7 @@ One easy way to tell if you have copied a file to the remote system is a java fi
         System.out.println(System.getProperty("user.dir"));
         }
     }
+
 Above is **not a screenshot**. You can highlight the code and copy/paste it just like any other text on the page (if you go to the website and view the page instead of the pdf, but I've pasted the code again below because it was one of the things I got marked down on and I don't want to argue).
 
 class WhereAmI {  
@@ -77,6 +84,7 @@ Afterwards, locally run "javac WhereAmI.java" and "java WhereAmI". You should ge
 Next, you can copy the WhereAmI.java file to the remote system by running the command:
 
     scp WhereAmI.java <your username>@ieng6.ucsd.edu:~/
+
 It will prompt you to enter your password just like it does with ssh.
 
 Now, log onto the remote system. Run the same two commands in the previous step ("javac WhereAmI.java" and "java WhereAmI") and it should output the information of the remote system like this screenshot.
