@@ -10,7 +10,7 @@
 ## Week 2
 
 ## Week 3
-[Lab Report 2: Remote Server and Search Engine; Symptoms and Failure-inducing Inputs](lab-report-week-2-3.html)
+[Lab Report 2: Servers and Bugs](lab-report-week-2-3.html)
 ## Week 4
 
 ## Week 5
