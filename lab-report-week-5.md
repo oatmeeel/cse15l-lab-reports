@@ -1480,11 +1480,11 @@ example command:
 find ./technical/plos -type f > findresults.txt
 ```
 
-output:
-
 this command lists everything with the type f (for file) in ./technical/plos and prints them in a new file 'findresults.txt' in the current director), or replaces the current file named 'findresults.txt' with the contents of the new file. similar to 'find ./technical -name *.txt > findresults.txt' except it is not limited to .txt files. this could be useful to list all the files in a directory, including those with different files types (e.g. .pdf, etc)
 
 again i have pasted findresults.txt here.
+
+output:
 
 <details>
   <summary>
@@ -1811,9 +1811,10 @@ output:
 example command:
 ```
 find ./technical -type d -name 911report -exec ls {} \;
+```
 
 this command executes the command 'ls' on all the directories in ./technical with the name '911report'. it outputs a list of all the files in 911report. this could be useful to run ls on one or multiple directories at a time.
-```
+
 
 output:
 ```
