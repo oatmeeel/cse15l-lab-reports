@@ -14,6 +14,7 @@
 ## Week 4
 
 ## Week 5
+[Lab Report 3: Commands](lab-report-week-5.html)
 
 ## Week 6
 
