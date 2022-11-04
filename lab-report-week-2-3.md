@@ -79,7 +79,7 @@ String searchString = "hello2";
 
 This is what the server looks like when first started:
 
-![Image](./week%203/serverempty.png)
+![Image](./week3/serverempty.png)
 
 The search engine navigates to the home page because the path of the url (gotten by the url.getPath() method) is empty. This is not technically a method, it's an if statement (because I copied the formatting of the original NumberServer and used to implement my version of SearchEngine).
 ```
@@ -95,7 +95,7 @@ in order to print it on the page. (it also calls String.format() to format said 
 
 This is the message that the server shows when the add method is called through the url. It checks whether or not "add" is in the url with the contains() method.
 
-![Image](./week%203/serveradd.png)
+![Image](./week3/serveradd.png)
 
 The search engine executes the add if statement (shown below) because the url (gotten by the url.getPath() method) contains add.
 
@@ -117,7 +117,7 @@ newString = parameters[1];
 ```
 Afterwards, it uses the add() method to add the newString to myList and prints a message saying that it did so.
 
-![Image](./week%203/serveradd2.png)
+![Image](./week3/serveradd2.png)
 
 If we revisit the home page (blank path), then we can see that myList now contains the string we just added.
 
@@ -125,11 +125,11 @@ If we revisit the home page (blank path), then we can see that myList now contai
 
 Before we dive into the search method, I have added more strings to myList with the add method so that we have a larger volume to search through.
 
-![Image](./week%203/serveradd3.png)
+![Image](./week3/serveradd3.png)
 
 This is the message that the server shows when the search method is called through the url. It checks whether or not "search" is in the url with the contains() method.
 
-![Image](./week%203/serversearch.png)
+![Image](./week3/serversearch.png)
 
 The search engine executes the search if statement (shown below) because the url (gotten by the url.getPath() method) contains search.
 
@@ -173,7 +173,7 @@ if (searchResults.size() == 0) {
 
 I've pasted the search screenshot again to show the string that is printed on the page "Results found: [hello, hello, jello, mello]"
 
-![Image](./week%203/serversearch.png)
+![Image](./week3/serversearch.png)
 
 # Part 2 (Week 3 - Symptoms and Failure-inducing Inputs)
 
@@ -182,13 +182,13 @@ For the three screenshots below, we only care about the reversedInPlace method. 
 
 **the failure-inducing input (the code of the test)**
 
-![Image](./week%203/arrayfailureinducinginput.png)
+![Image](./week3/arrayfailureinducinginput.png)
 
 The failure inducing input was that when given an array {1, 2, 3} that was larger than one element, the method failed to reverse it. (essentially, it was never able to reverse an array)
 
 **the symptom (the failing test output)**
 
-![Image](./week%203/arraysymptom.png)
+![Image](./week3/arraysymptom.png)
 
 As shown by the error report, the array differed from the expected output at the second index (the third element). The disfunctional method outputted {3, 2, 3} as the reversed array instead of the expected {3, 2, 1}. This is because in the for loop, when the loop is executed for i = 2
 ```
@@ -202,7 +202,7 @@ but at this point in the loop, arr[0] had already been set to the original arr[2
 
 **the bug (the code fix needed)**
 
-![Image](./week%203/arraychange.png)
+![Image](./week3/arraychange.png)
 
 **explaination of changes to fix**
 
@@ -216,21 +216,21 @@ For the next bug, it concerns the functionality of the append method of the Link
 
 **the failure-inducing input (the code of the test)**
 
-![Image](./week%203/linkedlistfailureinducinginput.png)
+![Image](./week3/linkedlistfailureinducinginput.png)
 
 The failure inducing input was trying to append an element to a LinkedList that already contains more than one element. (The assertEquals statement does not have an effect on the test case failing because later we can see that the test case never even gets to that point in the code)
 
 **the symptom (the failing test output)**
 
-![Image](./week%203/linkedlistsymptom1.png)
+![Image](./week3/linkedlistsymptom1.png)
 
 The method failed to output anything, instead it times out after being stuck on a loop for a while. 
 
-![Image](./week%203/linkedlistsymptom2.png)
+![Image](./week3/linkedlistsymptom2.png)
 
 **the bug (the code fix needed)**
 
-![Image](./week%203/linkedlistchange.png)
+![Image](./week3/linkedlistchange.png)
 
 **explaination of changes to fix**
 

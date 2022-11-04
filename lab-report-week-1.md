@@ -4,7 +4,7 @@ Go to the [Visual Studio Code](https://code.visualstudio.com/) website to instal
 
 Once installed, you should be able to open the application. (it should look something like this but it won't have any files)
 
-![Image](./week%201/installingvscode.png)
+![Image](./week1/installingvscode.png)
 
 # 2. Remotely Connecting
 Go to [this website](https://sdacs.ucsd.edu/~icc/index.php) to find your CSE 15L account name. The first nine characters should be cs15lfa22 and the last two letters are unique to each user.
@@ -15,13 +15,13 @@ Then, [reset your password](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9u
 
 In order to open the terminal (the place where you can directly input commands), go to the toolbar at the top of your screen, click on the "Terminal" tab and then click on "New Terminal."
 
-![Image](./week%201/openterminal.png)
+![Image](./week1/openterminal.png)
 
 Once the previous steps have been completed, you should be able to remotely connect to your account through the VScode terminal by running "ssh [your username]" and entering your password.
 
 Once you have remotely connected, the terminal should display something similar to the image below.
 
-![Image](./week%201/remotelyconnecting.png)
+![Image](./week1/remotelyconnecting.png)
 
 # 3. Trying Some Commands
 Once remotely connected, you can run some basic commands from the terminal. A list of possible commands can be found online, but here are some that can get you started:
@@ -52,7 +52,7 @@ cat, short for concatenate, can be used to print the contents of a given file.
 
 Plus there are many more commands not listed here.
 
-![Image](./week%201/tryingsomecommands.png)
+![Image](./week1/tryingsomecommands.png)
 
 # 4. Moving Files with SCP
 One easy way to tell if you have copied a file to the remote system is a java file that runs some commands that give information about the system it is located on. Create a file named WhereAmI.java on your client and paste this code into it:
@@ -79,7 +79,7 @@ System.out.println(System.getProperty("user.dir"));
 
 Afterwards, locally run "javac WhereAmI.java" and "java WhereAmI". You should get an output that shows you your operating system, your username, and the location of WhereAmI.java on your system.
 
-![Image](./week%201/movingfileswithscp.png)
+![Image](./week1/movingfileswithscp.png)
 
 Next, you can copy the WhereAmI.java file to the remote system by running the command:
 
@@ -89,14 +89,14 @@ It will prompt you to enter your password just like it does with ssh.
 
 Now, log onto the remote system. Run the same two commands in the previous step ("javac WhereAmI.java" and "java WhereAmI") and it should output the information of the remote system like this screenshot.
 
-![Image](./week%201/movingfileswithscp2.png)
+![Image](./week1/movingfileswithscp2.png)
 
 # 5. Setting an SSH Key
 Next, you can run the command "ssh-keygen" on your local system to generate a public/private rsa key pair. One copy of this key will be saved locally and one will be saved on the remote system. This key serves as a fingerprint so that you don't have to re enter your password everytime you want to log onto the remote server.
 
 See screenshot for specifics on what commands to run.
 
-![Image](./week%201/settingansshkey.png)
+![Image](./week1/settingansshkey.png)
 
 It will prompt you to enter the file in which to save the key. I was a bit confused on this step because I didn't know what exactly to enter, but my TA said that I could just leave it blank by default.
 
@@ -125,4 +125,4 @@ Additionally, you can access your previously run commands by pressing the up arr
 
 Below is a screenshot demonstrating some of the said shortcuts:
 
-![Image](./week%201/optimisingremoterunning.png)
+![Image](./week1/optimisingremoterunning.png)

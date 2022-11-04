@@ -1,1 +1,1 @@
-![Image](./week%200/genshinsecondanni.png)
+![Image](./week0/genshinsecondanni.png)

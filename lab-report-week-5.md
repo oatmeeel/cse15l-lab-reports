@@ -1837,8 +1837,8 @@ output:
 
 before:
 
-![Image](./week%205/before.png)
+![Image](./week5/before.png)
 
 after:
 
-![Image](./week%205/after.png)
+![Image](./week5/after.png)
