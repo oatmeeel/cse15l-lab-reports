@@ -19,6 +19,7 @@
 ## Week 6
 
 ## Week 7
+[Lab Report 4: Vim](lab-report-week-7.html)
 
 ## Week 8
 

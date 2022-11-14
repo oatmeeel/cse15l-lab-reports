@@ -1,4 +1,5 @@
 # Part 1
+## Fixing the broken testcase in TestDocSearch.java with vim (I don't remember if this was supposed to be on the lab report but I put it in anyway just in case)
 ```
 /10<Enter>lxi391<Esc>:wq<Enter>
 ```
@@ -14,24 +15,41 @@
 
 * Typing ":wq`<Enter>`" saves the changes to the current file and exits the vim editor. Typing ":" enters vim into command mode. Typing "w" saves the changes to the current file. Typing "q" quits the vim editor. `<Enter>` runs the commands.
 
+## Changing the name of the `start` parameter and its uses to `base`
 ```
 :%s/start/base/g<Enter>:wq<Enter>
 ```
 * ":" enters the command mode, whatever is typed after this is considered part of the command
+![Image](./week7/Screen%20Shot%202022-11-13%20at%2011.09.25%20PM.png)
 
 * "%" indicates to repeat the following command for all lines.
 
 * "s" is the command for "substitute".
+![Image](./week7/Screen%20Shot%202022-11-13%20at%2011.09.49%20PM.png)
 
 * "/start" indicates what to find.
 
 * "/base" indicates what to replace.
 
 * "/g" indicates to replace every instance of "start" on a line with "base".
+![Image](./week7/Screen%20Shot%202022-11-13%20at%2011.10.06%20PM.png)
 
 * `<Enter>` executes the command and exits command mode.
+![Image](./week7/Screen%20Shot%202022-11-13%20at%2011.10.17%20PM.png)
 
 * Typing ":wq`<Enter>`" saves the changes to the current file and exits the vim editor. Typing ":" enters vim into command mode. Typing "w" saves the changes to the current file. Typing "q" quits the vim editor. `<Enter>` runs the commands.
+![Image](./week7/Screen%20Shot%202022-11-13%20at%2011.10.36%20PM.png)
+![Image](./week7/Screen%20Shot%202022-11-13%20at%2011.10.39%20PM.png)
 
 # Part 2
+
+Both methods took me about 20 seconds.
+
+**Which of these two styles would you prefer using if you had to work on a program that you were running remotely, and why?**
+
+* I would still prefer using scp because it is what I am more familiar with, if I forced myself to use vim my workflow would be slowed down by my unfamiliarity with the movememnt, shortcuts, and commands.
+
+**What about the project or task might factor into your decision one way or another? (If nothing would affect your decision, say so and why!)**
+
+* The frequency of edits to the file. If I could make a bunch of edits to a file between a few scp's then scp is much more efficient in my opinion. If I have to make line by line edits between each scp, then at some point it would take so long to scp the entire file every single time that I would be very tempted to just use vim.
 
