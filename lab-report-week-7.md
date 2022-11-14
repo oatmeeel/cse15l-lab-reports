@@ -5,7 +5,7 @@
 ```
 * After entering the vim editor, typing "/10`<Enter>`" will result in the cursor jumping to the beginning of the 10 in "There are 10 total files to search." on line 14. "/" activates the search bar, which searches the current file for whatever the user types next. After typing "10", the cursor jumps to the desired area to edit. `<Enter>` exits search and moves the cursor to the result of the search.
 
-* Typing "l" while in normal mode moves the cursor right by one character, so the cursor moves from |10 to 1|0. ("|" is supposed to represent the cursor)
+* Typing "l" while in normal mode moves the cursor right by one character, so the cursor moves from `|`10 to 1`|`0. ("`|`" is supposed to represent the cursor)
 
 * Typing "x" while in normal mode deletes the character to the right of the cursor, so "10" becomes "1".
 
